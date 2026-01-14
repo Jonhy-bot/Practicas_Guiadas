@@ -17,10 +17,22 @@ public class Main {
          * }
          */
 
-        Person person = new Person("Jona", 19, 1);
+        Person person = new Person("Jona", 19, 3);
         Pet pet1 = new Pet("Bella", "Dog");
+        Pet pet2 = new Pet("Sefe", "Cat");
+        Pet pet3 = new Pet("Sisi", "Fish");
 
         if (person.addPet(pet1)) {
+            IOManager.printlnMessage("Pet added successfully");
+        } else {
+            IOManager.printlnMessage("Fail, try again");
+        }
+        if (person.addPet(pet2)) {
+            IOManager.printlnMessage("Pet added successfully");
+        } else {
+            IOManager.printlnMessage("Fail, try again");
+        }
+        if (person.addPet(pet3)) {
             IOManager.printlnMessage("Pet added successfully");
         } else {
             IOManager.printlnMessage("Fail, try again");
@@ -43,10 +55,19 @@ public class Main {
 
         }
 
-        if (person.upadatePets(pet1, 0)) {
+        if (person.upadatePets(new Pet("Black", "Horse"), 0)) {
             IOManager.printlnMessage("Uptede successfully");
         } else {
             IOManager.printlnMessage("Fail, try again");
+        }
+
+        if (person.getPets().length == 0) {
+            IOManager.printlnMessage("No pets found");
+        } else {
+            for (Pet pet : person.getPets()) {
+                IOManager.printlnMessage(pet.getPetName());
+            }
+
         }
 
     }

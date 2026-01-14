@@ -46,18 +46,10 @@ public class PetManager {
     }
 
     public boolean upadatePets(Pet pet, int index) {
-        if (index < 0 || index >= pets.length) {
-            return false;
-        }
-
-        if (pet == null) {
-            return false;
-        }
-
-        if (pets[index] == pet) {
+        if (index >= 0 && index < pets.length && pet != null) {
+            pets[index] = pet;
             return true;
         }
-
         return false;
     }
 
