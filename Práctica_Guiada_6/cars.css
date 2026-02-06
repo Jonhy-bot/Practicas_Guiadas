@@ -1,0 +1,17 @@
+a{
+    text-transform: uppercase;
+    color: black;
+}
+footer a{
+    text-transform: lowercase;
+}
+.test{
+    text-transform: lowercase;
+}
+h1{
+    color: rgb(100, 100, 50);
+    background-color: green;
+}
+p{
+    color: rgb(0, 0, 255);
+}

@@ -1,0 +1,25 @@
+body{
+    background-color: bisque;
+}
+p{
+    color: red;
+}
+.note{
+    font-size: 20px;
+}
+#id-selector-demo{
+    color: green;
+}
+li[value="4"]{
+    color: blue;
+}
+*{
+    text-align: center;
+}
+
+
+.playwrite-in-guides-regular {
+  font-family: "Playwrite IN Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

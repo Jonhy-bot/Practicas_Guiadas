@@ -1,0 +1,24 @@
+.caja-rojo{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+p[value = "1"]{
+    color: red;
+}
+.caja-azul{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+p[value = "2"]{
+    color: blue;
+}
+.caja-naranja{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+}
+p[value = "3"]{
+    color: orange;
+}
